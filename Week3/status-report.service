@@ -1,0 +1,7 @@
+[Unit]
+Description=Generate Server Status Report
+
+[Service]
+Type=oneshot
+User=ubuntu
+ExecStart=/home/ubuntu/status_report.sh
