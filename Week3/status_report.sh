@@ -96,10 +96,12 @@ below 80% = OK, otherwise WARNING.
 
 <p>
 I learned how Bash scripts can automate system monitoring and generate HTML reports.
+
+I also had a problem with the report generation not functioning, and it turns out it was because the systemd service could not write the generated HTML file because of file permission issues. After fiddling with the permissions, i managed to get it working. 
 </p>
 
 <p>
-<a href="https://github.com/OMA-KAYTTAJANIMI/OMA-REPO">
+<a href="https://github.com/VV-OH/Linux-kurssi/">
 GitHub Repository
 </a>
 </p>
