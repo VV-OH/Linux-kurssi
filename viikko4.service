@@ -1,0 +1,13 @@
+[Unit]
+Description=Flask Visitor Counter Replica
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/viikko2
+Environment="PATH=/home/ubuntu/viikko2/venv/bin"
+ExecStart=/home/ubuntu/viikko2/venv/bin/gunicorn \
+    --bind 127.0.0.1:8001 app_replica:app
+
+[Install]
+WantedBy=multi-user.target
